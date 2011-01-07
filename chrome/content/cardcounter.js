@@ -1,11 +1,11 @@
 var joker = nil;
 
 function toggle(event) {
+  // SUITES = [9824, 9829, 9827, 9830];
+  if(leftClick(event) && !joker) {
+    joker = event.target.label.slice(0,1);
+  }
   $(event.target).toggleClass(leftClick(event) ? "hidden" : "picked");
-  // if(leftClick(event) && !joker) {
-  //   joker = $(event.target).label;
-  // }
-  // alert(joker);
 }
 
 function launchCounter() {
@@ -19,5 +19,5 @@ function reset() {
 }
 
 function leftClick(event) {
-  return event.which == 1
+  return event.which == 1;
 }
