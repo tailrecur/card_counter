@@ -33,6 +33,11 @@ row>toolbarbutton.plain {
   opacity: 0;
 }
 
+.picked {
+  background-color: red;
+  color: black;
+}
+
 #counterFrame {
   height: 150px;
 }

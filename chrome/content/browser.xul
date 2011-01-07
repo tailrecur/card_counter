@@ -8,7 +8,7 @@
 
   <window id="main-window">   
       <keyset>
-        <key modifiers="alt,control" key="F" oncommand="$('#counterWindow').toggle();"/>
+        <key modifiers="alt,control" key="F" oncommand="launchCounter();"/>
       </keyset>
 
         <box id="counterWindow" style="display:none">
@@ -17,7 +17,7 @@
               <hbox id="overall">
                   <window>
                       <commandset id="mainCommandSet">
-                          <command id="cmd_toggle" oncommand="toggle(event.sourceEvent);"/>
+                          <command id="cmd_toggle" />
                       </commandset>
                       <vbox id="counterVBox">
                       <groupbox>
