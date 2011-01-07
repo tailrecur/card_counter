@@ -1,0 +1,8 @@
+content     cardcounter    chrome/content/
+content     cardcounter    chrome/content/ contentaccessible=yes
+overlay chrome://browser/content/browser.xul chrome://cardcounter/content/browser.xul
+
+locale	cardcounter	en-US	locale/en-US/
+
+skin	cardcounter	classic/1.0	skin/
+style	chrome://global/content/customizeToolbar.xul

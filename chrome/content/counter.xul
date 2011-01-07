@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css" ?>
+<?xml-stylesheet href="chrome://browser/skin/browser.css" type="text/css" ?>
+<!-- <?xml-stylesheet href="chrome://cardcounter/content/cardcounter.css"?> -->
+<!DOCTYPE page SYSTEM "chrome://cardcounter/locale/translations.dtd">
+
+<hbox id="sbEmptySidebar" title="&emptysidebar.title;"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+         <script type="text/javascript">
+         <![CDATA[
+           function toggle(event) {
+            if(event.target.className.match("hidden")) {
+              event.target.className = "plain visible";
+            }else {
+              event.target.className = "plain hidden";
+            }
+           }
+           
+           function reset() {
+              buttons = document.getElementsByTagName('toolbarbutton');
+              for(var i=0;i<buttons.length;i++) {
+                buttons[i].className = "plain visible";
+              }
+           }
+         ]]>
+         </script>
+         <commandset id="mainCommandSet">
+             <command id="cmd_toggle" oncommand="toggle(event.sourceEvent);"/>
+         </commandset>
+         <vbox id="counterVBox">
+         <!-- <groupbox>
+           <caption label="Cards"/> -->
+           <grid class="req">
+             <columns>
+                   <column minwidth="37px"/>
+                   <column minwidth="37px"/>
+                   <column minwidth="37px"/>
+                   <column minwidth="37px"/>
+                   <column minwidth="37px"/>
+                   <column minwidth="37px"/>
+                   <column minwidth="37px"/>
+                   <column minwidth="37px"/>
+                   <column minwidth="37px"/>
+                   <column minwidth="37px"/>
+                   <column minwidth="37px"/>
+                   <column minwidth="37px"/>
+                   <column minwidth="37px"/>
+            </columns>
+             <rows>
+               <row class="black" minheight="30px">
+                 <toolbarbutton label="2&#9824;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="3&#9824;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="4&#9824;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="5&#9824;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="6&#9824;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="7&#9824;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="8&#9824;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="9&#9824;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="10&#9824;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="J&#9824;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="Q&#9824;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="K&#9824;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="A&#9824;" class="plain" command="cmd_toggle"/>
+               </row>                    
+               <row class="red" minheight="30px">
+                 <toolbarbutton label="2&#9829;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="3&#9829;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="4&#9829;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="5&#9829;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="6&#9829;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="7&#9829;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="8&#9829;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="9&#9829;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="10&#9829;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="J&#9829;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="Q&#9829;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="K&#9829;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="A&#9829;" class="plain" command="cmd_toggle"/>
+               </row>                    
+               <row class="black" minheight="30px">
+                 <toolbarbutton label="2&#9827;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="3&#9827;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="4&#9827;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="5&#9827;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="6&#9827;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="7&#9827;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="8&#9827;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="9&#9827;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="10&#9827;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="J&#9827;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="Q&#9827;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="K&#9827;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="A&#9827;" class="plain" command="cmd_toggle"/>
+               </row>                    
+               <row class="red" minheight="30px">
+                 <toolbarbutton label="2&#9830;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="3&#9830;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="4&#9830;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="5&#9830;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="6&#9830;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="7&#9830;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="8&#9830;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="9&#9830;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="10&#9830;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="J&#9830;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="Q&#9830;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="K&#9830;" class="plain" command="cmd_toggle"/>
+                 <toolbarbutton label="A&#9830;" class="plain" command="cmd_toggle"/>
+               </row>                    
+             </rows>
+           </grid>
+           <hbox>
+             <button label="Reset" oncommand="reset();"/>
+           </hbox>
+       </vbox>
+</hbox>

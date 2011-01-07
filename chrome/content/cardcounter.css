@@ -1,0 +1,38 @@
+#counterWindow {
+   position:fixed;
+   top:0px;
+   left:90px;
+}
+
+row.black {
+  color: black;
+}
+
+row.red {
+  color: red;
+}
+
+label.plain {
+  font: 16px verdana,sans-serif;
+  padding: 3px;
+  border:1px solid black;
+}
+
+row>toolbarbutton.plain {
+  font: 16px verdana,sans-serif;
+  border:1px solid black;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#counterFrame {
+  height: 150px;
+}
